@@ -1,0 +1,9 @@
+.card {
+  margin: auto;
+  padding: 1em;
+  border: 0 solid #e5e7eb;
+  border-radius: 0.55rem;
+  background-color: #ffffff;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

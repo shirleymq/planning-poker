@@ -1,0 +1,64 @@
+.button {
+  /*margin: auto;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0.8em;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;*/
+  background-color: white;
+  color: black;
+  border: 3px solid transparent;
+  border-image: linear-gradient(90deg, #f54180, #338ef7) 1;
+  /* border-image: conic-gradient(
+    from 90deg at 50% 50%,
+    #f54180 0,
+    #338ef7 50%,
+    #f54180 100%
+  );*/
+  border-image-slice: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border-radius: 0.7em;
+  transition: color 0.3s ease;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 3px solid transparent;
+  border-radius: 0.7em;
+
+  border-image: linear-gradient(90deg, #f54180, #338ef7) 1;
+  border-image-slice: 1;
+  animation: border-animation 3s linear infinite;
+  z-index: -1;
+}
+
+@keyframes border-animation {
+  0% {
+    border-image-source: linear-gradient(90deg, #f54180, #338ef7);
+  }
+  50% {
+    border-image-source: linear-gradient(90deg, #338ef7, #f54180);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, #f54180, #338ef7);
+  }
+}
+
+.border-color {
+  background-image: conic-gradient(
+    from 90deg at 50% 50%,
+    #f54180 0,
+    #338ef7 50%,
+    #f54180 100%
+  );
+  animation: spin 3s linear infinite;
+}

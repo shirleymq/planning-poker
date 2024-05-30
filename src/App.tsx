@@ -1,5 +1,6 @@
 import { Card } from "./components/card/Card";
 import "./App.css";
+import { Button } from "./components/button/Button";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Card>
           <p>Spring boot on java</p>
         </Card>
+        <Button> Aceptar</Button>
       </div>
     </>
   );
